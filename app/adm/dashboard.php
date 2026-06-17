@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'conexao.php';
+require_once '../conexao.php';
 
 $r = mysqli_query($conn, "SELECT * FROM vw_relatorios");
 $d = mysqli_fetch_assoc($r);

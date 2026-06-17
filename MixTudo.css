@@ -197,3 +197,114 @@ tr:hover td {
 a {
   text-decoration: none;
 }
+
+/* ===== Login / Cadastro ===== */
+.login-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+.login-box {
+  background: #fff;
+  padding: 40px 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+.login-box h1 {
+  font-size: 36px;
+  margin-bottom: 4px;
+}
+.login-sub {
+  color: #666;
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+.login-form {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.login-form input {
+  width: 100%;
+}
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-top: 4px;
+}
+.login-link {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #666;
+}
+.login-link a {
+  color: #0d47a1;
+  font-weight: 600;
+}
+
+/* ===== Menu Cliente (loja) ===== */
+.menu-cliente {
+  background: #0d47a1;
+  padding: 0 20px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+.menu-cliente-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+.menu-cliente-logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+.menu-cliente-logo:hover {
+  background: #1565c0;
+}
+.menu-cliente-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.menu-cliente-links a {
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.2s;
+}
+.menu-cliente-links a:hover {
+  background: #1565c0;
+}
+.menu-cliente-user {
+  color: rgba(255,255,255,0.75);
+  padding: 8px 10px;
+  font-size: 13px;
+}
+.carrinho-link {
+  position: relative;
+}
+.carrinho-badge {
+  background: #c62828;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1px 7px;
+  font-size: 11px;
+  font-weight: 700;
+  margin-left: 4px;
+}

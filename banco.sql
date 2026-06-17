@@ -36,7 +36,9 @@ CREATE TABLE clientes (
   nome            varchar(100) not null,
   telefone        varchar(20)  not null,
   endereco        varchar(200) not null,
-  forma_pagamento varchar(100) not null
+  forma_pagamento varchar(100) not null,
+  usuario         varchar(50)  unique,
+  senha           varchar(255)
 );
 
 -- Tabela de vendas (fk clientes)
@@ -58,6 +60,9 @@ create table itens_venda (
   foreign key (id_venda)   references vendas(id_venda),
   foreign key (id_produto) references produtos(id)
 );
+
+-- Caso já tenha o banco criado, rode o ALTER abaixo:
+-- ALTER TABLE clientes ADD COLUMN usuario VARCHAR(50) UNIQUE, ADD COLUMN senha VARCHAR(255);
 
 -- View pra facilitar os relatorios
 create view vw_relatorios as

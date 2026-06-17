@@ -12,7 +12,7 @@ $pagina_atual = basename($_SERVER['PHP_SELF']);
 <head>
   <meta charset="UTF-8">
   <title>MixTudo Variedades</title>
-  <link rel="stylesheet" href="../MixTudo.css">
+  <link rel="stylesheet" href="../../MixTudo.css">
 </head>
 <body>
 
@@ -21,7 +21,7 @@ $pagina_atual = basename($_SERVER['PHP_SELF']);
   <a href="categorias.php" class="<?php if ($pagina_atual == 'categorias.php') echo 'ativo' ?>">Categorias</a>
   <a href="produtos.php" class="<?php if ($pagina_atual == 'produtos.php') echo 'ativo' ?>">Produtos</a>
   <a href="clientes.php" class="<?php if ($pagina_atual == 'clientes.php') echo 'ativo' ?>">Clientes</a>
-  <a href="index.html">Sair</a>
+  <a href="../../index.html">Sair</a>
 </div>
 
 <?php if ($mensagem != '' && $mensagem != null) { ?>
