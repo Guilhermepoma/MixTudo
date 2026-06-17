@@ -12,7 +12,7 @@ $pagina_atual = basename($_SERVER['PHP_SELF']);
 <head>
   <meta charset="UTF-8">
   <title>MixTudo Variedades</title>
-  <link rel="stylesheet" href="MixTudo.css">
+  <link rel="stylesheet" href="../MixTudo.css">
 </head>
 <body>
 
