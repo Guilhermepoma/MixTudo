@@ -1,3 +1,4 @@
+/* ===== MixTudo CSS ===== */
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +17,7 @@ h1 {
   color: #1a1a2e;
 }
 
-/* Menu de navegação */
+/* Menu de navegação (azul escuro) */
 .menu {
   background: #0d47a1;
   padding: 10px 20px;
@@ -33,6 +34,7 @@ h1 {
   font-weight: 600;
   font-size: 14px;
   text-decoration: none;
+  transition: 0.2s;
 }
 .menu a:hover {
   background: #1565c0;
@@ -106,7 +108,6 @@ button, .btn {
   font-size: 14px;
   text-decoration: none;
   display: inline-block;
-  transition: background 0.2s;
 }
 button:hover {
   background: #1565c0;
@@ -151,6 +152,7 @@ th, td {
   border-bottom: 1px solid #e0e0e0;
   font-size: 14px;
 }
+/* efeito zebrado */
 tr:nth-child(even) td {
   background: #f8faff;
 }
@@ -165,7 +167,7 @@ tr:hover td {
   font-style: italic;
 }
 
-/* Cartões */
+/* Cartões do dashboard */
 .cartao {
   background: #fff;
   border-radius: 10px;
@@ -180,14 +182,6 @@ tr:hover td {
   justify-content: space-between;
   padding: 6px 0;
   font-size: 14px;
-}
-.total {
-  font-weight: 700;
-  font-size: 18px;
-  border-top: 2px solid #ddd;
-  padding-top: 10px;
-  margin-top: 10px;
-  color: #0d47a1;
 }
 
 .flex {
