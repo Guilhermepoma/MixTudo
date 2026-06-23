@@ -29,6 +29,7 @@
   </div>
 
   <!-- PRODUTOS -->
+ <div class="mix-produtos">
  <div class="mix-produto utilidades">
   <img src="https://http2.mlstatic.com/D_Q_NP_2X_800719-MLB110648071750_052026-P.webp">
 
@@ -117,20 +118,14 @@
 
 </section>
 
+<script src="MixTudo.js"></script>
 <script>
 function filtrar(categoria) {
-  let produtos = document.querySelectorAll('.mix-produto');
-
-  produtos.forEach(p => {
-    if (categoria === 'todos') {
-      p.style.display = 'block';
-    } else {
-      if (p.classList.contains(categoria)) {
-        p.style.display = 'block';
-      } else {
-        p.style.display = 'none';
-      }
-    }
+  document.querySelectorAll('.mix-produto').forEach(p => {
+    p.style.display = (categoria === 'todos' || p.classList.contains(categoria)) ? 'block' : 'none';
+  });
+  document.querySelectorAll('.mix-filtros button').forEach(b => {
+    b.classList.toggle('ativo', b.textContent.trim().toLowerCase() === categoria || (categoria === 'todos' && b.textContent.trim() === 'Todos'));
   });
 }
 </script>
