@@ -1,21 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MixTudo Variedades</title>
-  <link rel="stylesheet" href="MixTudo.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="MixTudo.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<title>MixTudo - Loja de Variedades</title>
 </head>
-<body style="display:flex;align-items:center;justify-content:center;min-height:100vh;text-align:center">
+<body class="mix-body">
 
+<header class="mix-header">
+  <h1>MIX TUDO</h1>
+  <p>Variedades, utilidades e preços acessíveis</p>
+</header>
+
+<div class="mix-hero" style="height:80vh">
   <div>
-    <h1 style="font-size:48px;margin-bottom:8px">MixTudo</h1>
-    <p style="font-size:20px;color:#555;margin-bottom:32px">Bem vindo ao MixTudo Variedades!</p>
-    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-      <a href="app/adm/dashboard.php" class="btn" style="padding:14px 40px;font-size:18px;border-radius:12px">Administrativo</a>
-      <a href="app/usuario/loja.php" class="btn btn-sucesso" style="padding:14px 40px;font-size:18px;border-radius:12px">Ir para Loja</a>
+    <h2>Bem-vindo à Mix Tudo</h2>
+    <p style="font-size:18px;color:#5b6b7a">Tudo o que você precisa em um só lugar</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px">
+      <a href="home.html" class="mix-btn" style="text-decoration:none;display:inline-block">Conheça a loja</a>
+      <a href="app/usuario/loja.php" class="mix-btn" style="text-decoration:none;display:inline-block;background:#2e7d32">Comprar agora</a>
     </div>
   </div>
+</div>
+
+<section class="mix-section" style="padding-top:40px;padding-bottom:40px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px">
+    <div style="background:white;border-radius:14px;padding:24px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.15);border:2px solid #b0b8c4">
+      <div style="font-size:36px;margin-bottom:8px"><i class="fas fa-store"></i></div>
+      <h3 style="color:#1f3b73;margin-bottom:4px">Variedades</h3>
+      <p style="color:#6b7280;font-size:13px">Milhares de produtos para você</p>
+    </div>
+    <div style="background:white;border-radius:14px;padding:24px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.15);border:2px solid #b0b8c4">
+      <div style="font-size:36px;margin-bottom:8px"><i class="fas fa-truck"></i></div>
+      <h3 style="color:#1f3b73;margin-bottom:4px">Entrega rápida</h3>
+      <p style="color:#6b7280;font-size:13px">Receba em casa sem sair</p>
+    </div>
+    <div style="background:white;border-radius:14px;padding:24px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.15);border:2px solid #b0b8c4">
+      <div style="font-size:36px;margin-bottom:8px"><i class="fas fa-credit-card"></i></div>
+      <h3 style="color:#1f3b73;margin-bottom:4px">Parcele no cartão</h3>
+      <p style="color:#6b7280;font-size:13px">Facilidade na hora de pagar</p>
+    </div>
+    <div style="background:white;border-radius:14px;padding:24px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.15);border:2px solid #b0b8c4">
+      <div style="font-size:36px;margin-bottom:8px"><i class="fas fa-lock"></i></div>
+      <h3 style="color:#1f3b73;margin-bottom:4px">Compra segura</h3>
+      <p style="color:#6b7280;font-size:13px">Seus dados protegidos</p>
+    </div>
+  </div>
+</section>
+
+<div style="text-align:center;padding:40px">
+  <p style="color:#6b7280;margin-bottom:16px">Área administrativa</p>
+  <a href="app/adm/dashboard.php" class="mix-btn" style="text-decoration:none;display:inline-block;background:#6b7280">Acessar</a>
+</div>
+
+<footer class="mix-footer">
+  <h3>Mix Tudo</h3>
+  <p>Araranguá - SC</p>
+  <p>Email: contato@mixtudo.com</p>
+  <div class="mix-social">
+    <a href="#">Instagram</a>
+    <a href="#">WhatsApp</a>
+    <a href="#">Facebook</a>
+  </div>
+</footer>
 
 </body>
 </html>

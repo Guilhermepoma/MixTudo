@@ -4,132 +4,130 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="MixTudo.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <title>Mix Tudo - Loja de Variedades</title>
 </head>
 
 <body class="mix-body">
 
-<!-- HEADER -->
-<header class="mix-header">
-    <h1>MIX TUDO</h1>
-    <p>Loja de variedades - tudo o que você precisa em um só lugar</p>
+<header class="mix-header" style="text-align:center">
+    <div style="display:block;text-align:center">
+      <h1 style="display:block;margin:0 0 4px 0;text-align:center"><i class="fas fa-store"></i> Mix Tudo</h1>
+      <p style="display:block;margin:0;text-align:center">Loja de variedades — tudo o que você precisa em um só lugar</p>
+    </div>
 </header>
 
-<!-- HERO -->
-<div class="mix-hero">
+<div class="mix-hero" style="height:70vh">
     <div>
         <h2>Bem-vindo à Mix Tudo</h2>
-        <p>Variedades, utilidades e preços acessíveis para o seu dia a dia</p>
-
-        <button class="mix-btn"
-        onclick="document.getElementById('sobre').scrollIntoView()">
-            Conheça mais
-        </button>
+        <p style="font-size:18px;color:#5b6b7a">Variedades, utilidades e preços acessíveis para o seu dia a dia</p>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px">
+            <a href="app/usuario/loja.php" class="mix-btn" style="text-decoration:none;display:inline-block"><i class="fas fa-shopping-bag"></i> Comprar agora</a>
+            <a href="#sobre" class="mix-btn" style="text-decoration:none;display:inline-block;background:#6b7280"><i class="fas fa-arrow-down"></i> Conheça mais</a>
+        </div>
     </div>
 </div>
 
-<!-- SOBRE -->
 <section id="sobre" class="mix-section">
-
-  <h2 class="mix-title">Sobre a Loja</h2>
+  <h2 class="mix-title"><i class="fas fa-store-alt"></i> Sobre a Loja</h2>
 
   <div class="mix-about mix-card-sobre">
-
     <img src="https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d" alt="Loja">
-
     <div>
-      <h3>Bem-vinda à Mix Tudo</h3>
-
+      <h3>Bem-vindo à Mix Tudo</h3>
       <p>
         A <strong>Mix Tudo</strong> nasceu com o propósito de oferecer praticidade, economia e variedade em um só lugar,
         facilitando o dia a dia de quem busca soluções simples e acessíveis para casa, presentes e utilidades.
-        <br><br>
-
+      </p>
+      <p>
         Aqui você encontra produtos selecionados com carinho, pensando sempre em qualidade, beleza e funcionalidade.
-        Nosso objetivo é tornar sua experiência de compra leve, rápida e agradável, como uma visita a uma loja feita especialmente para você.
-        <br><br>
-
+        Nosso objetivo é tornar sua experiência de compra leve, rápida e agradável.
+      </p>
+      <p>
         Mais do que vender produtos, queremos fazer parte do seu cotidiano, ajudando a transformar pequenos detalhes em grandes facilidades.
       </p>
 
       <div class="mix-destaques">
-        <span>✨ Variedades para todos os estilos</span>
-        <span>💙 Atendimento próximo e humano</span>
-        <span>🏠 Casa, organização e utilidades</span>
-        <span>🎁 Presentes criativos e acessíveis</span>
+        <span><i class="fas fa-boxes"></i> Variedades para todos os estilos</span>
+        <span><i class="fas fa-headset"></i> Atendimento próximo e humano</span>
+        <span><i class="fas fa-home"></i> Casa, organização e utilidades</span>
+        <span><i class="fas fa-gift"></i> Presentes criativos e acessíveis</span>
+      </div>
+
+      <div style="text-align:center;margin-top:24px">
+        <a href="app/usuario/loja.php" class="mix-btn" style="text-decoration:none;display:inline-block"><i class="fas fa-arrow-right"></i> Ver produtos</a>
       </div>
     </div>
-
   </div>
 </section>
 
 <section class="mix-section">
-
-  <h2 class="mix-title">Nossos Produtos</h2>
+  <h2 class="mix-title"><i class="fas fa-cube"></i> Categorias</h2>
+  <p style="text-align:center;color:#6b7280;margin-bottom:30px">Encontre o que você precisa</p>
 
   <div class="mix-produtos">
-
     <div class="mix-produto">
-      <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f">
+      <div style="height:180px;background:linear-gradient(135deg,#1f3b73,#2c5aa0);display:flex;align-items:center;justify-content:center;font-size:48px;color:white"><i class="fas fa-tools"></i></div>
       <div class="mix-produto-info">
         <h3>Utilidades</h3>
         <p>Organização e praticidade para sua casa.</p>
-        <a href="produtos.html" class="mix-produto-btn">Ver mais</a>
+        <a href="app/usuario/loja.php" class="mix-produto-btn"><i class="fas fa-arrow-right"></i> Ver mais</a>
       </div>
     </div>
 
     <div class="mix-produto">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpMyUq9Q_4na3LS6qIs7cp2D8otFfIF9iH3KG9tpAtiiJfRre81rsvaYd9&s=10">
+      <div style="height:180px;background:linear-gradient(135deg,#c62828,#e53935);display:flex;align-items:center;justify-content:center;font-size:48px;color:white"><i class="fas fa-paint-roller"></i></div>
       <div class="mix-produto-info">
         <h3>Decoração</h3>
         <p>Toques delicados para deixar seu ambiente lindo.</p>
-        <a href="produtos.html" class="mix-produto-btn">Ver mais</a>
+        <a href="app/usuario/loja.php" class="mix-produto-btn"><i class="fas fa-arrow-right"></i> Ver mais</a>
       </div>
     </div>
 
     <div class="mix-produto">
-      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+      <div style="height:180px;background:linear-gradient(135deg,#2e7d32,#43a047);display:flex;align-items:center;justify-content:center;font-size:48px;color:white"><i class="fas fa-microchip"></i></div>
       <div class="mix-produto-info">
         <h3>Eletrônicos</h3>
         <p>Pequenos itens úteis para o dia a dia.</p>
-        <a href="produtos.html" class="mix-produto-btn">Ver mais</a>
+        <a href="app/usuario/loja.php" class="mix-produto-btn"><i class="fas fa-arrow-right"></i> Ver mais</a>
       </div>
     </div>
 
     <div class="mix-produto">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0jwVIhyN3BHvJEyNKE4LZ71TBVVDYQh6BsapOfFrTeI5mFkmpC6LLFSo&s=10">
+      <div style="height:180px;background:linear-gradient(135deg,#f57f17,#f9a825);display:flex;align-items:center;justify-content:center;font-size:48px;color:white"><i class="fas fa-gift"></i></div>
       <div class="mix-produto-info">
         <h3>Presentes</h3>
         <p>Ideias criativas para surpreender alguém especial.</p>
-        <a href="produtos.html" class="mix-produto-btn">Ver mais</a>
+        <a href="app/usuario/loja.php" class="mix-produto-btn"><i class="fas fa-arrow-right"></i> Ver mais</a>
       </div>
     </div>
-
   </div>
 
+  <div style="text-align:center;margin-top:32px">
+    <a href="app/usuario/loja.php" class="mix-btn" style="text-decoration:none;display:inline-block;padding:14px 40px;font-size:16px"><i class="fas fa-store"></i> Ir para a loja</a>
+  </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="mix-footer">
-
-    <h3>Mix Tudo</h3>
-    <p>Rua Exemplo, 123 - Centro</p>
-    <p>Araranguá - SC</p>
-    <p>Telefone: (48) 99999-9999</p>
-    <p>Email: contato@mixtudo.com</p>
+    <h3><i class="fas fa-store"></i> Mix Tudo</h3>
+    <p><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 — Centro</p>
+    <p><i class="fas fa-city"></i> Araranguá — SC</p>
+    <p><i class="fas fa-phone"></i> (48) 99999-9999</p>
+    <p><i class="fas fa-envelope"></i> contato@mixtudo.com</p>
 
     <div class="mix-social">
-        <a href="#">Instagram</a>
-        <a href="#">WhatsApp</a>
-        <a href="#">Facebook</a>
+        <a href="app/usuario/loja.php"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="app/usuario/loja.php"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="app/usuario/loja.php"><i class="fab fa-facebook"></i> Facebook</a>
     </div>
 
+    <p style="margin-top:20px;font-size:13px;color:#999"><a href="app/usuario/loja.php" style="color:#1f3b73">Acessar loja</a> &middot; <a href="app/adm/dashboard.php" style="color:#999">Admin</a></p>
 </footer>
-<a class="whatsapp-float"
-   href="https://wa.me/5548999999999"
-   target="_blank">
-   💬
+
+<a class="whatsapp-float" href="https://wa.me/5548999999999" target="_blank">
+   <i class="fab fa-whatsapp"></i>
 </a>
+
 <script src="MixTudo.js"></script>
 </body>
 </html>
